@@ -1,0 +1,13 @@
+n=int(input())
+if n<=0:
+    print("false")
+else:
+  r = [int(x) for x in str(n)]
+  l=r[::-1]
+  res = int("".join(map(str, r)))
+  pes = int("".join(map(str, l)))
+  if res==pes:
+    print("true")
+  else:
+    print("false")
+    
